@@ -1,5 +1,6 @@
 import { MIUrl, MIPath } from './constant';
-import { StatusRequest, Server } from './types';
+import type { StatusRequest } from './types';
+import { ServerType } from './types';
 import { z } from 'zod';
 
 export const status = async (req: StatusRequest) => {
@@ -8,9 +9,13 @@ export const status = async (req: StatusRequest) => {
       .string()
       .nonempty()
       .refine((v) => {
-        return Object.values(Server).includes(v as Server);
+        return Object.values(ServerType).includes(v as ServerType);
       }, 'Invalid server type'),
-    address: z.union([z.string().nonempty(), z.string().url(), z.string().ip()]),
+    address: z.union([
+      z.string().nonempty(),
+      z.string().url(),
+      z.string().ip(),
+    ]),
     port: z
       .number()
       .int()
