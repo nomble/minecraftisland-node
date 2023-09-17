@@ -2,8 +2,6 @@ import { resolve } from 'path';
 import { defineConfig } from 'vitest/config';
 import dts from 'vite-plugin-dts';
 
-// https://vitejs.dev/guide/build.html#library-mode
-
 export default defineConfig({
   build: {
     lib: {
@@ -13,7 +11,5 @@ export default defineConfig({
     },
   },
   test: {},
-  plugins: [dts({
-    insertTypesEntry: true,
-  })],
+  plugins: [dts({ insertTypesEntry: true })],
 });
