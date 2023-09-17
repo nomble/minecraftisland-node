@@ -1,7 +1,5 @@
 node_modules/
 dist/
-.prettierrc.ts
-.eslintrc.json
 env.d.ts
 vite.config.ts
 .gitignore
