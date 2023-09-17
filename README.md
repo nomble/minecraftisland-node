@@ -35,9 +35,9 @@ Get the status of a server
 ## Example
 
 ```ts
-import { status } from 'mi-query';
+import MinecraftIsland from '@nomble/minecraftisland';
 
-const status = await status({
+const status = await MinecraftIsland.status({
   type: 'java',
   address: 'minecraftisland.com',
   port: 25565,
