@@ -1,12 +1,13 @@
 import { describe, expect, it } from 'vitest';
 import { status } from './status';
+import { ServerType } from './types';
 
 describe('Status', () => {
   it('should return status', async () => {
     const res = await status({
       address: 'mc.hypixel.net',
       port: 25565,
-      type: 'java',
+      type: ServerType.JAVA,
     });
 
     expect(res).toEqual({
