@@ -28,6 +28,11 @@ export const status = async (req: StatusRequest) => {
   const StatusRequest = StatusRequestSchema.parse(req);
   const query = new URLSearchParams(StatusRequest);
   const res = await fetch(`${MIUrl.BASE}${MIPath.Status}?${query.toString()}`);
-  const json = await res.json();
-  return json;
+
+  if (res.ok) {
+    const json = await res.json();
+    return json;
+  } else {
+    throw new Error(`${res.status} ${res.statusText}`);
+  }
 };
