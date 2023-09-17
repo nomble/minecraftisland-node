@@ -1,10 +1,10 @@
-export enum Server {
+export enum ServerType {
   JAVA = 'java',
   BEDROCK = 'bedrock',
 }
 
 export type StatusRequest = {
-  type: Server;
+  type: ServerType;
   address: string;
   port?: number;
 };
