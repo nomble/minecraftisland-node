@@ -2,6 +2,10 @@
 
 Minecraft Island (Minecraft Server Status API) NPM Package
 
+```bash
+npm install @nomble/minecraftisland
+```
+
 # Status
 
 ## Description

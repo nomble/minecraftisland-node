@@ -3,8 +3,8 @@
   "version": "1.0.4",
   "type": "module",
   "author": {
-    "name": "Nomble",
-    "email": "dev@nomble.dev"
+    "name": "Necmettin",
+    "email": "hi@necmettin.dev"
   },
   "main": "./dist/my-lib.umd.cjs",
   "module": "./dist/my-lib.js",
@@ -45,9 +45,6 @@
   "files": [
     "dist"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "repository": {
     "type": "git",
     "url": "github.com/nomble/minecraftisland-node.git"
