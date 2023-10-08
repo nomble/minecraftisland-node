@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          registry-url: https://npm.pkg.github.com/nomble
+          registry-url: https://npm.pkg.github.com
       - name: Install NPM dependencies
         run: npm install
       - name: Run tests
@@ -24,6 +24,6 @@ jobs:
       - name: Create NPM package
         run: npm run build
       - name: Publish NPM package
-        run: npm publish --registry https://npm.pkg.github.com/nomble --verbose
+        run: npm publish --registry https://npm.pkg.github.com --verbose
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
