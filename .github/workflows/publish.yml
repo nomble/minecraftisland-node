@@ -13,10 +13,6 @@ jobs:
       packages: write
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          registry-url: https://npm.pkg.github.com/nomble
       - name: Install NPM dependencies
         run: npm install
       - name: Run tests
