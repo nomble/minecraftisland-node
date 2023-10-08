@@ -8,8 +8,8 @@ describe('Ping', () => {
     expect(res).toEqual('online');
   });
 
-  it('should return offline', async () => {
-    const res = await ping();
+  it('should return offline when server is offline', async () => {
+    const res = await ping('https://offline.minecraftisland.com');
 
     expect(res).toEqual('offline');
   });

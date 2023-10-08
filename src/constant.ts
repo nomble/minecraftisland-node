@@ -3,7 +3,7 @@ export const enum MIUrl {
 }
 
 export const enum MIPath {
-  Ping = '/ping',
+  Ping = '/',
   Status = '/status',
   Icon = '/icon',
 }

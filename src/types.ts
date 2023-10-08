@@ -69,7 +69,7 @@ export type JavaStatusPureResponse = {
 };
 
 export type JavaStatusResponse = BaseStatusResponse & {
-  Extra?: JavaStatusPureResponse;
+  extra?: JavaStatusPureResponse;
 };
 
 export type BedrockStatusPureResponse = {
@@ -92,5 +92,5 @@ export type BedrockStatusPureResponse = {
 };
 
 export type BedrockStatusResponse = BaseStatusResponse & {
-  Extra?: BedrockStatusPureResponse;
+  extra?: BedrockStatusPureResponse;
 };
