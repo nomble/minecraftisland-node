@@ -1,9 +1,9 @@
-name: Create NPM Package
+name: Test
 
 on:
-  workflow_dispatch:
-  release:
-    types: [created]
+  push:
+    branches:
+      - main
 
 jobs:
   publish:
@@ -21,9 +21,3 @@ jobs:
         run: npm install
       - name: Run tests
         run: npm run test
-      - name: Create NPM package
-        run: npm run build
-      - name: Publish NPM package
-        run: npm publish --registry https://npm.pkg.github.com/nomble --verbose
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
