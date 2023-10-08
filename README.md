@@ -2,7 +2,7 @@
 
 Minecraft Island (Minecraft Server Status API) NPM Package
 
-# status
+# Status
 
 ## Description
 
