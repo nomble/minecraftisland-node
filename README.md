@@ -22,17 +22,17 @@ npm install @nomble/minecraftisland
 
 # Status
 
-## Description
+### Description
 
 Get the status of a server
 
-## Parameters
+### Parameters
 
 - **type** - The type of server to check
 - **address** - The address of the server to check
 - **port** - The port of the server to check
 
-## Returns
+### Returns
 
 - **type** - The type of server
 - **version** - The version of the server
@@ -50,7 +50,7 @@ Get the status of a server
 - **os** - The operating system of the server
 - **password** - If the server has a password
 
-## Status Example
+### Status Example
 
 ```ts
 import MinecraftIsland from '@nomble/minecraftisland';
@@ -66,19 +66,19 @@ console.log(status); // { type: 'java', version: '1.16.5', players: 0, maxPlayer
 
 # Ping
 
-## Description
+### Description
 
 Ping a server to see if it is online or offline
 
-## Parameters
+### Parameters
 
 None
 
-## Returns
+### Returns
 
 String - 'online' or 'offline'
 
-## Ping Example
+### Ping Example
 
 ```ts
 import MinecraftIsland from '@nomble/minecraftisland';
@@ -90,19 +90,19 @@ console.log(res); // 'online' or 'offline'
 
 # Icon
 
-## Description
+### Description
 
 Get the icon of a server
 
-## Parameters
+### Parameters
 
 Address - The address of the server to get the icon from
 
-## Returns
+### Returns
 
 Blob - The icon of the server
 
-# Icon Example
+### Icon Example
 
 ```ts
 import MinecraftIsland from '@nomble/minecraftisland';
