@@ -2,6 +2,20 @@
 
 Minecraft Island (Minecraft Server Status API) NPM Package
 
+## :star: Show Your Support!
+
+If you found this project helpful or you learned something from the source code and want to thank me, consider giving a :star: [on GitHub](https://github.com/nomble/minecraftisland-node)!
+
+Your support motivates me to keep going, innovate, and create better open-source projects! :heart:
+
+## Table of Contents
+
+- [Status](#status)
+- [Ping](#ping)
+- [Icon](#icon)
+
+## Installation
+
 ```bash
 npm install @nomble/minecraftisland
 ```
